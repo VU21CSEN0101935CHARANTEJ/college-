@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>College Time Table Management System</title>
+    <link rel="stylesheet" href="college.css">
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav class="first-color">
+        <div class="container">
+            <h1>College Time Table</h1>
+            <ul class="nav-links">
+                <li><a href="#" class="nav-link">Home</a></li>
+                <li><a href="#" class="nav-link">Schedule</a></li>
+                <li><a href="#" class="nav-link">Announcements</a></li>
+                <li><a href="#" class="nav-link">Attendance</a></li>
+                <li><a href="#" class="nav-link">Calendar Sync</a></li>
+                <li><a href="#" class="nav-link">Login</a></li>
+            </ul>
+        </div>
+        <!-- Navigation Bar Image with Caption -->
+        <figure class="image-caption">
+            <img src="E:/images/navbar.png" alt="Navigation Bar Screenshot">
+            <figcaption>Figure 1: Navigation Bar of the College Time Table Management System</figcaption>
+        </figure>
+    </nav>
+
+    <!-- Main Content -->
+    <main>
+        <!-- User Roles Section -->
+        <section class="second-color">
+            <div class="container">
+                <h2>User Roles</h2>
+                <figure class="image-caption">
+                    <img src="E:/images/user_roles.png" alt="User Roles Diagram">
+                    <figcaption>Figure 2: Different User Roles in the System</figcaption>
+                </figure>
+                <div class="roles">
+                    <div class="role">
+                        <h3>Admin</h3>
+                        <p>Manage users, schedules, and announcements.</p>
+                    </div>
+                    <div class="role">
+                        <h3>Faculty</h3>
+                        <p>Create and edit class schedules, track attendance.</p>
+                    </div>
+                    <div class="role">
+                        <h3>Student</h3>
+                        <p>View schedules, sync with personal calendars, track attendance.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Schedule Creation Section -->
+        <section class="third-color">
+            <div class="container">
+                <h2>Schedule Creation</h2>
+                <figure class="image-caption">
+                    <img src="E:/images/schedule_creation.png" alt="Schedule Creation Interface">
+                    <figcaption>Figure 3: Interface for Creating Class Schedules</figcaption>
+                </figure>
+                <form class="schedule-form">
+                    <label for="course">Course:</label>
+                    <input type="text" id="course" name="course" required>
+
+                    <label for="faculty">Faculty:</label>
+                    <input type="text" id="faculty" name="faculty" required>
+
+                    <label for="day">Day:</label>
+                    <select id="day" name="day" required>
+                        <option value="">Select Day</option>
+                        <option>Monday</option>
+                        <option>Tuesday</option>
+                        <option>Wednesday</option>
+                        <option>Thursday</option>
+                        <option>Friday</option>
+                    </select>
+
+                    <label for="time">Time:</label>
+                    <input type="time" id="time" name="time" required>
+
+                    <button type="submit">Create Schedule</button>
+                </form>
+            </div>
+        </section>
+
+        <!-- Announcements Section -->
+        <section class="second-color">
+            <div class="container">
+                <h2>Announcements</h2>
+                <figure class="image-caption">
+                    <img src="E:/images/announcements.png" alt="Announcements Section">
+                    <figcaption>Figure 4: Announcements Section</figcaption>
+                </figure>
+                <div class="announcements">
+                    <div class="announcement">
+                        <h3>New Schedule Released</h3>
+                        <p>The new semester schedule has been published. Please check your courses.</p>
+                    </div>
+                    <div class="announcement">
+                        <h3>Holiday Notice</h3>
+                        <p>Classes will be suspended on October 15th due to the national holiday.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Attendance Tracking Section -->
+        <section class="third-color">
+            <div class="container">
+                <h2>Attendance Tracking</h2>
+                <figure class="image-caption">
+                    <img src="E:/images/attendance_tracking.png" alt="Attendance Tracking Table">
+                    <figcaption>Figure 5: Attendance Tracking Table</figcaption>
+                </figure>
+                <table class="attendance-table">
+                    <thead>
+                        <tr>
+                            <th>Student Name</th>
+                            <th>Course</th>
+                            <th>Date</th>
+                            <th>Status</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>John Doe</td>
+                            <td>Mathematics</td>
+                            <td>2024-09-25</td>
+                            <td>Present</td>
+                        </tr>
+                        <tr>
+                            <td>Jane Smith</td>
+                            <td>Physics</td>
+                            <td>2024-09-25</td>
+                            <td>Absent</td>
+                        </tr>
+                        <!-- More rows as needed -->
+                    </tbody>
+                </table>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="first-color">
+        <div class="container">
+            <figure class="image-caption">
+                <img src="E:/images/footer.png" alt="Footer Section">
+                <figcaption>Figure 6: Footer of the System</figcaption>
+            </figure>
+            <p>&copy; 2024 College Time Table Management System. All rights reserved.</p>
+        </div>
+    </footer>
+</body>
+</html>
